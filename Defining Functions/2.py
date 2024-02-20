@@ -4,4 +4,10 @@ def factorial(n):
     fact *= x
   return fact
 
-print(factorial(3))
+def factorialRecursivo(n):
+  if n<=1:
+    return 1
+  else:
+    return n * factorialRecursivo(n-1)
+
+print(factorial(1558))
